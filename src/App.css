@@ -25,6 +25,7 @@ header .logo {
 header .logo img {
   max-width: 40px;
   cursor: pointer;
+  filter: sepia(70%);
 }
 
 header .logo span {
