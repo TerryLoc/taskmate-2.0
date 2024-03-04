@@ -1,7 +1,15 @@
 export const Addtask = () => {
   return (
-    <div>
-      <h1>Addtask</h1>
-    </div>
+    <section className="addTask">
+      <form>
+        <input
+          type="text"
+          name="task"
+          autoComplete="off"
+          placeholder="add task"
+          maxLength="25"></input>
+        <button type="submit">Add</button>
+      </form>
+    </section>
   );
 };
