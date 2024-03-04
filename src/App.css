@@ -61,7 +61,7 @@ header .themeSelector .activeTheme {
 
 .addTask form {
   display: flex;
-  gap: 7px;
+  gap: 10px;
 }
 
 .addTask form input {
@@ -69,7 +69,7 @@ header .themeSelector .activeTheme {
   padding: 5px 5px;
   border: 1px solid #eaeaea;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 
 .addTask form input:focus {
@@ -110,9 +110,10 @@ header .themeSelector .activeTheme {
 }
 
 .showTask .title {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
   user-select: none;
+  color: #6a5237;
 }
 
 .showTask .count {
@@ -178,14 +179,14 @@ header .themeSelector .activeTheme {
   color: #737373;
 }
 
-.showTask i.bi-pencil-square {
-  font-size: 18px;
+.showTask i.bi-pencil {
+  font-size: 1rem;
   color: #1363df;
   cursor: pointer;
 }
 
-.showTask i.bi-trash {
-  font-size: 18px;
+.showTask i.bi-trash3 {
+  font-size: 1rem;
   color: #d82148;
   cursor: pointer;
 }
