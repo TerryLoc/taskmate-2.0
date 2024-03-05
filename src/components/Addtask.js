@@ -7,9 +7,14 @@ export const Addtask = ({ tasklist, setTasklist }) => {
     const newTask = {
       id: date.getTime(),
       name: e.target.task.value,
-      time: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`,
+      time: `${date.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+      })} ${date.toLocaleDateString()}`,
     };
     setTasklist([...tasklist, newTask]);
+    e.target.task.value = '';
   };
 
   return (
@@ -20,7 +25,7 @@ export const Addtask = ({ tasklist, setTasklist }) => {
           name="task"
           autoComplete="off"
           placeholder="add task"
-          maxLength="25"></input>
+          maxLength="30"></input>
         <button type="submit">Add</button>
       </form>
     </section>
