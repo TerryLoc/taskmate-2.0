@@ -3,7 +3,10 @@ export const Showtask = ({ tasklist, setTasklist, task, setTask }) => {
     const updatedList = tasklist.filter((todo) => todo.id !== id);
     setTasklist(updatedList);
   }
-  function handleEdit() {}
+  function handleEdit(id) {
+    const selectedTaksk = tasklist.find((todo) => todo.id === id);
+    console.log(selectedTaksk);
+  }
 
   return (
     <section className="showTask">
