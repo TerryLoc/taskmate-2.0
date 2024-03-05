@@ -7,12 +7,23 @@ import './App.css';
 
 function App() {
   const [tasklist, setTasklist] = useState([]);
+  const [task, setTask] = useState({});
 
   return (
     <div className="App">
       <Header />
-      <Addtask tasklist={tasklist} setTasklist={setTasklist} />
-      <Showtask tasklist={tasklist} setTasklist={setTasklist} />
+      <Addtask
+        tasklist={tasklist}
+        setTasklist={setTasklist}
+        task={task}
+        setTask={setTask}
+      />
+      <Showtask
+        tasklist={tasklist}
+        setTasklist={setTasklist}
+        task={task}
+        setTask={setTask}
+      />
     </div>
   );
 }
